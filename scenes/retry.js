@@ -9,7 +9,6 @@ export default class Retry extends Phaser.Scene {
     }
 
     init(data) {
-        console.log(data);
         this.data = data;
         this.scena = data.scena;
         this.select = data.select;
@@ -17,17 +16,12 @@ export default class Retry extends Phaser.Scene {
 
     preload() {
 
-        console.log("preload", this.scena, this.select);
-        console.log(arr[this.scena][this.select]);
-
         let e = arr[this.scena][this.select]
 
         // remove textures
         this.textures.remove('room');
 
         // Images
-
-
         this.load.image("room", e.room);
 
         this.load.html('retryBlock', 'components/retryBlock/retryBlock.html', 512, 512);
@@ -72,10 +66,6 @@ export default class Retry extends Phaser.Scene {
 
         this.posX = posX;
         this.posY = posY;
-
-        console.log(posX, posY);
-
-        console.log(width / 2 - constant.retry.width, height / 2 - constant.retry.height);
 
         let retryBlock = this.add.dom(width / 2 - constant.retry.width + 300, height / 2 - constant.retry.height)
             .createFromCache('retryBlock')

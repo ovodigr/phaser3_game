@@ -18,7 +18,6 @@ export default class Screen extends Phaser.Scene {
     }
 
     init(data) {
-        console.log(data);
         this.data = data;
         this.scena = data.scena;
         this.select = data.select;
@@ -67,7 +66,6 @@ export default class Screen extends Phaser.Scene {
 
         let progress = arr["progress"][this.scena - 1];
 
-        console.log("progress", progress);
 
         this.createAnimation('girl_joi_anim', 'girl_joi', 0, 2, 2, 1);
 

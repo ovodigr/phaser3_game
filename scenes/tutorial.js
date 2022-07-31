@@ -70,19 +70,15 @@ export default class Tutorial extends Phaser.Scene {
             if ((constant.cloths.one + constant.cloths.two) * scaleClothes >= width) {
                 // scale
                 scaleClothes = width / (constant.cloths.one + constant.cloths.two) * scaleClothes;
-
-                // console.log('scale', scaleClothes);
             }
             else
                 if ((constant.cloths.one + constant.cloths.two) * scaleClothes > width / 2) {
                     //set 1/3
-                    // console.log('set 1/3', scaleClothes);
                 }
                 else {
                     // set close girl, spase between one img and maybe scale
                     scaleClothes = scaleClothes * 1.2;
 
-                    // console.log('set close girl', scaleClothes);
                 }
         }
 

@@ -32,23 +32,16 @@ export default class Game extends Phaser.Scene {
         this.things = data.things;
 
         this.numberDressPicked = data.numberDressPicked;
-
-        console.log('things', this.things);
-        console.log("numberDressPicked", this.numberDressPicked);
     }
 
     preload() {
 
 
         this.scale.on('orientationchange', function (orientation) {
-            console.log('orientationchange');
+            // console.log('orientationchange');
         });
 
-        console.log(this.orientationDisplay);
-
         this.bind();
-
-        console.log(arr[this.scena][this.select]);
 
         let e = arr[this.scena][this.select];
 
