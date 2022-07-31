@@ -9,11 +9,9 @@ export default class Tutorial extends Phaser.Scene {
         super("Tutorial");
     }
 
-
     init(data) {
         this.data = data;
     }
-
 
     preload() {
         // Images

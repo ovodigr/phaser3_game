@@ -36,42 +36,6 @@ export default class Intro extends Phaser.Scene {
 
     create() {
 
-        {
-            // this.scene.start("Game", {
-            //     "scena": 6,
-            //     "select": 1
-            // })
-
-            // this.scene.start("Game", {
-            //     "scena": 4,
-            //     "select": 1,
-            //     "numberDressPicked": 1,
-            //     "things": [
-            //         {
-            //             "name": "21",
-            //             "thing": {
-            //                 "img": "assets/images/girl_changed_1_1.png",
-            //                 "depth": 1
-            //             }
-            //         },
-            //         {
-            //             "name": "31",
-            //             "thing": {
-            //                 "img": "assets/images/big_bag1.png",
-            //                 "depth": 1
-            //             }
-            //         },
-            //         {
-            //             "name": "41",
-            //             "thing": {
-            //                 "img": "assets/images/big_sun_glasses.png",
-            //                 "depth": 3
-            //             }
-            //         }
-            //     ]
-            // })
-        }
-
         this.orientationDisplay = this.checkOrientationDisplay();
 
         let posX, posY;
@@ -98,13 +62,13 @@ export default class Intro extends Phaser.Scene {
         let textBlock = this.add.dom(posX, posY)
             .createFromCache('textBlock');
 
-        if (posY < 800 && posX < 380)
-            document.querySelector('.wrap').style.height = '40vh';
-
         if (this.orientationDisplay == 'landscape') {
-            document.querySelector('.wrap').style.height = '60vh';
+            document.querySelector('.wrap1').style.height = '250px';
 
         }
+
+        // if (posY < 800 && posX < 380)
+        //     document.querySelector('.wrap1').style.height = '40vh';
 
         this.callTimer(0, () => this.showIntoSurprise(posX, posY, constant[this.orientationDisplay].intro.text1), false);
 

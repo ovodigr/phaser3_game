@@ -135,9 +135,9 @@ export default class Game extends Phaser.Scene {
         this.posY = posY;
 
         let block_leftX;
-        let block_leftY = posY * 1.2;
+        let block_leftY = posY * 1.1;
         let block_rightX;
-        let block_rightY = posY * 1.2;
+        let block_rightY = posY * 1.1;
         let scaleClothes = 0.8;
         let scaleHand = 0.5;
 
