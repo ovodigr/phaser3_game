@@ -1,0 +1,22 @@
+.chooseBlockLeft,
+.chooseBlockRight {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 2px solid #EF6C30;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    /* padding: 20px 20px; */
+    /* padding: 20px 20px; */
+}
+
+
+/* .chooseBlockImgLeft,
+.chooseBlockImgRight {
+    object-fit: cover; 
+    min-width: 100%;
+    min-height: 100%
+} */

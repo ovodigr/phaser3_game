@@ -1,0 +1,23 @@
+.topPickBlock {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    border-radius: 16px;
+    border: 1px solid #EF6C30;
+    padding: 0 10px;
+    background-color: #000000;
+}
+
+.textThing {
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.05px;
+    color: #fcf7f7;
+}

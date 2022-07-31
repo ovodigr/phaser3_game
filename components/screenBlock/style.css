@@ -1,0 +1,99 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height: 500px;
+    height: 30vh;
+    width: 80vw;
+}
+
+.rectangle_ {
+    position: relative;
+    height: 10%;
+    width: 30%;
+    background-color: #EEDDFF;
+    border-radius: 0 5px 0px 0px;
+    background: linear-gradient(180deg, #DF2E63 41.15%, #B81F56 100%);
+    /* transform: perspective(10px) rotateX(1deg);
+    margin: 50px; */
+    transform: matrix(1.00, 0.00, -0.60, 1.00, 0, 0);
+    -ms-transform: matrix(1.00, 0.00, -0.60, 1.00, 0, 0);
+    -webkit-transform: matrix(1.00, 0.00, -0.60, 1.00, 0, 0);
+}
+
+.name {
+    width: 100px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding-left: 30px;
+    color: white;
+    transform: matrix(1.00, 0.00, 0.60, 1.00, 0, 0);
+    -ms-transform: matrix(1.00, 0.00, 0.60, 1.00, 0, 0);
+    -webkit-transform: matrix(1.00, 0.00, 0.60, 1.00, 0, 0);
+}
+
+.textBoxWrap {
+    position: relative;
+    height: 25%;
+    width: 50%;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+
+.textBoxWrap::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    background-color: white;
+    padding: 2px;
+    background: linear-gradient(0deg, #FFFFFF, #BA2157) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.wrapInside {
+    position: relative;
+    height: 98%;
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    background-color: #EEDDFF;
+    border-radius: 25px;
+}
+
+.textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 25px;
+}
+
+.ellipseOne_ {
+    position: absolute;
+    right: -15px;
+    top: -5px;
+    width: 20px;
+    height: 10px;
+    background-color: #EEDDFF;
+    border: 1px solid #7922CC;
+    border-radius: 50%;
+}
+
+.ellipseTwo_ {
+    position: absolute;
+    right: -15px;
+    top: 5px;
+    width: 40px;
+    height: 20px;
+    background-color: #EEDDFF;
+    border: 1px solid #7922CC;
+    border-radius: 50%;
+}
